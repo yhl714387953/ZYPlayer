@@ -6,7 +6,7 @@
 
 上一个粗糙的效果图
 
-![](image/iPhone1.png)
+<img src="image/iPhone1.png" width="300" align=center />
 
 也是一款网络播放器，可播放本地与网络的资源，直播拉流暂不支持RTMP协议；如若需要支持RTMP协议，请转到B站的开源[https://github.com/Bilibili/ijkplayer](https://github.com/Bilibili/ijkplayer)
 
