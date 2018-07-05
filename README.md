@@ -4,6 +4,10 @@
 
 `播放`、`暂停`、`选时播放(快进快退)`、`缓冲`、`播放时长`、`音频信息获取`、`视频首帧获取`、`视频更换`、`播放速度调节`
 
+上一个粗糙的效果图
+
+![](image/iPhone1.png)
+
 也是一款网络播放器，可播放本地与网络的资源，直播拉流暂不支持RTMP协议；如若需要支持RTMP协议，请转到B站的开源[https://github.com/Bilibili/ijkplayer](https://github.com/Bilibili/ijkplayer)
 
 #### 基础播放需要的类
