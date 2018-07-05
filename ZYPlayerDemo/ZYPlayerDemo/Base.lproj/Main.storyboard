@@ -115,7 +115,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="换个视频"/>
                                 <connections>
-                                    <action selector="changeVideo:" destination="Ikv-NI-kVj" eventType="touchUpInside" id="H3B-yt-0i2"/>
+                                    <segue destination="m7c-ej-r0p" kind="presentation" modalPresentationStyle="overCurrentContext" id="j3i-Ru-kps"/>
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="K1N-5H-g1J">
@@ -170,6 +170,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3TK-BE-pCb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="888.79999999999995" y="132.68365817091455"/>
+        </scene>
+        <!--Video List Controller-->
+        <scene sceneID="hBc-zk-BkU">
+            <objects>
+                <viewController id="m7c-ej-r0p" customClass="VideoListController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rJJ-iA-cgA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SUn-3n-uoZ">
+                                <rect key="frame" x="0.0" y="467" width="375" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="66N-DL-ft6"/>
+                                </constraints>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="m7c-ej-r0p" id="tgo-OT-X1X"/>
+                                    <outlet property="delegate" destination="m7c-ej-r0p" id="YmZ-Fo-GpL"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="u1G-nh-f6O" firstAttribute="bottom" secondItem="SUn-3n-uoZ" secondAttribute="bottom" id="f77-dc-YXF"/>
+                            <constraint firstItem="SUn-3n-uoZ" firstAttribute="leading" secondItem="u1G-nh-f6O" secondAttribute="leading" id="rve-7a-jm6"/>
+                            <constraint firstItem="u1G-nh-f6O" firstAttribute="trailing" secondItem="SUn-3n-uoZ" secondAttribute="trailing" id="zyE-DG-VQ2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="u1G-nh-f6O"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="SUn-3n-uoZ" id="QUt-c3-HzH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6sF-nd-jN1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1649" y="133"/>
         </scene>
     </scenes>
 </document>

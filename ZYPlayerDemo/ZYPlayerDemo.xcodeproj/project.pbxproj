@@ -13,6 +13,8 @@
 		F7A6C6F420EDF7DC00C98930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7A6C6F320EDF7DC00C98930 /* Assets.xcassets */; };
 		F7A6C6F720EDF7DC00C98930 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7A6C6F520EDF7DC00C98930 /* LaunchScreen.storyboard */; };
 		F7A6C6FA20EDF7DC00C98930 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A6C6F920EDF7DC00C98930 /* main.m */; };
+		F7A6C70520EE12F600C98930 /* VideoListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A6C70420EE12F600C98930 /* VideoListController.m */; };
+		F7A6C70720EE156A00C98930 /* VideoList.plist in Resources */ = {isa = PBXBuildFile; fileRef = F7A6C70620EE156A00C98930 /* VideoList.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		F7A6C6F620EDF7DC00C98930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7A6C6F820EDF7DC00C98930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7A6C6F920EDF7DC00C98930 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F7A6C70320EE12F600C98930 /* VideoListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoListController.h; sourceTree = "<group>"; };
+		F7A6C70420EE12F600C98930 /* VideoListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoListController.m; sourceTree = "<group>"; };
+		F7A6C70620EE156A00C98930 /* VideoList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = VideoList.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +67,9 @@
 				F7A6C6EB20EDF7DB00C98930 /* AppDelegate.m */,
 				F7A6C6ED20EDF7DB00C98930 /* ViewController.h */,
 				F7A6C6EE20EDF7DB00C98930 /* ViewController.m */,
+				F7A6C70320EE12F600C98930 /* VideoListController.h */,
+				F7A6C70420EE12F600C98930 /* VideoListController.m */,
+				F7A6C70620EE156A00C98930 /* VideoList.plist */,
 				F7A6C6F020EDF7DB00C98930 /* Main.storyboard */,
 				F7A6C6F320EDF7DC00C98930 /* Assets.xcassets */,
 				F7A6C6F520EDF7DC00C98930 /* LaunchScreen.storyboard */,
@@ -128,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7A6C70720EE156A00C98930 /* VideoList.plist in Resources */,
 				F7A6C6F720EDF7DC00C98930 /* LaunchScreen.storyboard in Resources */,
 				F7A6C6F420EDF7DC00C98930 /* Assets.xcassets in Resources */,
 				F7A6C6F220EDF7DB00C98930 /* Main.storyboard in Resources */,
@@ -144,6 +153,7 @@
 				F7A6C6EF20EDF7DB00C98930 /* ViewController.m in Sources */,
 				F7A6C6FA20EDF7DC00C98930 /* main.m in Sources */,
 				F7A6C6EC20EDF7DB00C98930 /* AppDelegate.m in Sources */,
+				F7A6C70520EE12F600C98930 /* VideoListController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

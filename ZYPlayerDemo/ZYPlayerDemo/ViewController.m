@@ -7,9 +7,11 @@
 //
 
 #import "ViewController.h"
+
+#import "VideoListController.h"
 #import <AVKit/AVKit.h>
 
-@interface ViewController ()
+@interface ViewController ()<VideoListControllerDelegate>
 {
     BOOL _isDragging;
     NSArray* _observerKeyPathes;
@@ -50,7 +52,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSURL* fileUrl = [NSURL URLWithString:@"https://v11-tt.ixigua.com/9228c01726880487a2670b097d4557d1/5b3dd0ba/video/m/2202fad8db191704ca4a68cd12f5a25f1fe1158ae08000030447941f419/"];
+    NSURL* fileUrl = [NSURL URLWithString:@"https://v11-tt.ixigua.com/d421619e4289422889bda01e3186951f/5b3df0a6/video/m/2202fad8db191704ca4a68cd12f5a25f1fe1158ae08000030447941f419/"];
     self.playerItem = [AVPlayerItem playerItemWithURL:fileUrl];
     self.player = [AVPlayer playerWithPlayerItem:self.playerItem];
     
@@ -311,7 +313,7 @@
     }];
 }
 
-- (IBAction)changeVideo:(UIButton *)sender {
+- (void)changeVideo:(NSDictionary *)info {
     
     NSString* url = @"https://v11-tt.ixigua.com/4ffee0d47f1de1b5156778c91e76fa5e/5b3dd30c/video/m/2203b34e1c7c4924c299cd10067064ef0ec115646510000a4e81abf4aab/";
     NSURL* fileUrl = [NSURL URLWithString:url];
@@ -342,15 +344,25 @@
     return videoImage;
 }
 
-/*
+
+#pragma mark - VideoListControllerDelegate
+-(void)videoListController:(VideoListController *)videoController selectInfo:(NSDictionary *)info{
+    
+    [self changeVideo:info];
+}
+
  #pragma mark - Navigation
- 
  // In a storyboard-based application, you will often want to do a little preparation before navigation
  - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
  // Get the new view controller using [segue destinationViewController].
  // Pass the selected object to the new view controller.
+     
+     if ([segue.destinationViewController isKindOfClass:[VideoListController class]]) {
+         VideoListController* vc = (VideoListController*)segue.destinationViewController;
+         vc.delegate = self;
+     }
  }
- */
+
 
 
 @end
