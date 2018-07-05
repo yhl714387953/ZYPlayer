@@ -132,7 +132,7 @@ CGRect frame = self.playerLayer.videoRect;
     }
 ```
 
-#####2.2 监听 `AVPlayerItem` 的 `loadedTimeRanges ` 属性
+##### 2.2 监听 `AVPlayerItem` 的 `loadedTimeRanges ` 属性
 
 可是捕捉到音视频加载进度，在
 
@@ -152,10 +152,10 @@ if ([ranges isKindOfClass:[NSArray class]] && ranges.count > 0) {
 }
 ```
 
-#####2.3 监听 `AVPlayerItem` 的 `playbackBufferEmpty ` 属性
+##### 2.3 监听 `AVPlayerItem` 的 `playbackBufferEmpty ` 属性
 缓冲开始
 
-#####2.4 监听 `AVPlayerItem` 的 `playbackLikelyToKeepUp ` 属性
+##### 2.4 监听 `AVPlayerItem` 的 `playbackLikelyToKeepUp ` 属性
 缓冲结束
 
 #### 3.音视频控制
@@ -187,7 +187,7 @@ if ([ranges isKindOfClass:[NSArray class]] && ranges.count > 0) {
     CMTime time = self.player.currentTime;
     time.value = 30 * time.timescale;
     [self.player seekToTime:time completionHandler:^(BOOL finished) {
-        NSLog(@"seek到 %f 位置", currentTime);
+        NSLog(@"seek到 %f 位置", self.player.currentTime);
     }];
 ```
 
@@ -209,4 +209,10 @@ self.player.rate = 1;
 
 #### 4.音视频UI展示
 
-需要一个定时器去实时更新UI状态变化，可以用 `NSTimer` 或者 `CADisplayLink`，具体可参照[Demo](Demo)
+需要一个定时器去实时更新UI状态变化，可以用 `NSTimer` 或者 `CADisplayLink`，具体可参照[Demo](https://github.com/yhl714387953/ZYPlayer)
+
+---
+感谢您阅读完毕，如有疑问，欢迎添加QQ:714387953(蜗牛上高速)。
+[https://github.com/yhl714387953/ZYPlayer](https://github.com/yhl714387953/ZYPlayer)
+如果有错误，欢迎指正，一起切磋，共同进步
+如果喜欢可以Follow、Star、Fork，都是给我最大的鼓励。
