@@ -53,6 +53,7 @@ self.player = [AVPlayer playerWithPlayerItem:self.playerItem];
 
 // 如果是视频，需要初始化一个展示的layer
 self.playerLayer = [AVPlayerLayer playerLayerWithPlayer:self.player];
+self.playerLayer.videoGravity = AVLayerVideoGravityResizeAspect;//填充模式
 self.playerLayer.backgroundColor = [UIColor blackColor].CGColor;
 self.playerLayer.frame = CGRectMake(0, 0, self.view.frame.size.width, 300);//需要给一个初始值
 [self.view.layer addSublayer:self.playerLayer ];

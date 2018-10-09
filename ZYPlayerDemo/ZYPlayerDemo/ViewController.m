@@ -52,12 +52,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSURL* fileUrl = [NSURL URLWithString:@"https://v11-tt.ixigua.com/d421619e4289422889bda01e3186951f/5b3df0a6/video/m/2202fad8db191704ca4a68cd12f5a25f1fe1158ae08000030447941f419/"];
+    NSURL* fileUrl = [NSURL URLWithString:@"https://v11-tt.ixigua.com/97a79c007fbf2eff57de2ea5ea504fef/5bbc75d9/video/m/2203fb2f57729814ecabc2385759838e888115c69870000007ab7e0e120/"];
     self.playerItem = [AVPlayerItem playerItemWithURL:fileUrl];
     self.player = [AVPlayer playerWithPlayerItem:self.playerItem];
     
     //* 视频播放
     self.playerLayer = [AVPlayerLayer playerLayerWithPlayer:self.player];
+    self.playerLayer.videoGravity = AVLayerVideoGravityResizeAspect;//填充模式
     self.playerLayer.backgroundColor = [UIColor blackColor].CGColor;
     self.playerLayer.frame = CGRectMake(0, 0, self.view.frame.size.width, 300);//需要给一个初始值
     [self.view.layer addSublayer:self.playerLayer ];
@@ -162,7 +163,7 @@
             CGFloat duration = CMTimeGetSeconds(self.playerItem.duration);
             NSLog(@"媒体就绪，播放时长：%f", duration);
             NSLog(@"播放视图大小：%@", @(self.playerLayer.videoRect));
-            self.playerLayer.frame = self.playerLayer.videoRect;
+//            self.playerLayer.frame = self.playerLayer.videoRect;
             self.totalTimeLabel.text = [NSString stringWithFormat:@"%02d:%02d", (int)duration / 60, (int)duration % 60];
             
             [self mp3Info];
@@ -315,8 +316,7 @@
 
 - (void)changeVideo:(NSDictionary *)info {
     
-    NSString* url = @"https://v11-tt.ixigua.com/4ffee0d47f1de1b5156778c91e76fa5e/5b3dd30c/video/m/2203b34e1c7c4924c299cd10067064ef0ec115646510000a4e81abf4aab/";
-    NSURL* fileUrl = [NSURL URLWithString:url];
+    NSURL* fileUrl = [NSURL URLWithString:info[@"url"]];
     self.playerItem = [AVPlayerItem playerItemWithURL:fileUrl];
     [self.player replaceCurrentItemWithPlayerItem:self.playerItem];
 }
