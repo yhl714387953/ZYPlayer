@@ -16,16 +16,16 @@ class VideoListController: UIViewController, UITableViewDataSource,UITableViewDe
 
     open var callBack : ([String : String]) -> () = {param in }
     
-    lazy var dataSource : NSArray = {
+    lazy var dataSource : [[String : String]] = {
         
-        var videoList = [NSDictionary]()
+        var videoList = [[String : String]]()
         let url = Bundle.main.path(forResource: "VideoList", ofType: "plist")
         if let myUrl = url {
-            videoList = NSArray(contentsOfFile: myUrl) as! [NSDictionary]
+            videoList = NSArray(contentsOfFile: myUrl) as! [[String : String]]
         }
         
         
-        return videoList as NSArray
+        return videoList
     }()
     
     override func viewDidLoad() {
@@ -47,7 +47,7 @@ class VideoListController: UIViewController, UITableViewDataSource,UITableViewDe
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
-        let video = dataSource[indexPath.row] as! [String : String]
+        let video = dataSource[indexPath.row]
         cell?.textLabel?.text = video["name"]
       
         return cell!
@@ -55,7 +55,7 @@ class VideoListController: UIViewController, UITableViewDataSource,UITableViewDe
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let video = dataSource[indexPath.row] as! [String : String]
+        let video = dataSource[indexPath.row]
         callBack(video)
         
         dismiss(animated: true) {
