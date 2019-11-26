@@ -7,34 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F7A6C6EC20EDF7DB00C98930 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A6C6EB20EDF7DB00C98930 /* AppDelegate.m */; };
-		F7A6C6EF20EDF7DB00C98930 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A6C6EE20EDF7DB00C98930 /* ViewController.m */; };
-		F7A6C6F220EDF7DB00C98930 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7A6C6F020EDF7DB00C98930 /* Main.storyboard */; };
-		F7A6C6F420EDF7DC00C98930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7A6C6F320EDF7DC00C98930 /* Assets.xcassets */; };
-		F7A6C6F720EDF7DC00C98930 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7A6C6F520EDF7DC00C98930 /* LaunchScreen.storyboard */; };
-		F7A6C6FA20EDF7DC00C98930 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A6C6F920EDF7DC00C98930 /* main.m */; };
-		F7A6C70520EE12F600C98930 /* VideoListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A6C70420EE12F600C98930 /* VideoListController.m */; };
-		F7A6C70720EE156A00C98930 /* VideoList.plist in Resources */ = {isa = PBXBuildFile; fileRef = F7A6C70620EE156A00C98930 /* VideoList.plist */; };
+		F76B6F7F238CBF0500CB3646 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76B6F7E238CBF0500CB3646 /* AppDelegate.swift */; };
+		F76B6F81238CBF0500CB3646 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76B6F80238CBF0500CB3646 /* ViewController.swift */; };
+		F76B6F84238CBF0500CB3646 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76B6F82238CBF0500CB3646 /* Main.storyboard */; };
+		F76B6F86238CBF0600CB3646 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76B6F85238CBF0600CB3646 /* Assets.xcassets */; };
+		F76B6F89238CBF0600CB3646 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76B6F87238CBF0600CB3646 /* LaunchScreen.storyboard */; };
+		F76B6F93238CC0DE00CB3646 /* VideoListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76B6F92238CC0DE00CB3646 /* VideoListController.swift */; };
+		F76B6F95238CC19900CB3646 /* VideoList.plist in Resources */ = {isa = PBXBuildFile; fileRef = F76B6F94238CC19900CB3646 /* VideoList.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F7A6C6E720EDF7DB00C98930 /* ZYPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7A6C6EA20EDF7DB00C98930 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		F7A6C6EB20EDF7DB00C98930 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F7A6C6ED20EDF7DB00C98930 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F7A6C6EE20EDF7DB00C98930 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F7A6C6F120EDF7DB00C98930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F7A6C6F320EDF7DC00C98930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F7A6C6F620EDF7DC00C98930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F7A6C6F820EDF7DC00C98930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F7A6C6F920EDF7DC00C98930 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F7A6C70320EE12F600C98930 /* VideoListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoListController.h; sourceTree = "<group>"; };
-		F7A6C70420EE12F600C98930 /* VideoListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoListController.m; sourceTree = "<group>"; };
-		F7A6C70620EE156A00C98930 /* VideoList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = VideoList.plist; sourceTree = "<group>"; };
+		F76B6F7B238CBF0500CB3646 /* ZYPlayer-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ZYPlayer-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F76B6F7E238CBF0500CB3646 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F76B6F80238CBF0500CB3646 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F76B6F83238CBF0500CB3646 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F76B6F85238CBF0600CB3646 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F76B6F88238CBF0600CB3646 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F76B6F8A238CBF0600CB3646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F76B6F92238CC0DE00CB3646 /* VideoListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListController.swift; sourceTree = "<group>"; };
+		F76B6F94238CC19900CB3646 /* VideoList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = VideoList.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F7A6C6E420EDF7DB00C98930 /* Frameworks */ = {
+		F76B6F78238CBF0500CB3646 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,76 +39,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F7A6C6DE20EDF7DB00C98930 = {
+		F76B6F72238CBF0500CB3646 = {
 			isa = PBXGroup;
 			children = (
-				F7A6C6E920EDF7DB00C98930 /* ZYPlayerDemo */,
-				F7A6C6E820EDF7DB00C98930 /* Products */,
+				F76B6F7D238CBF0500CB3646 /* ZYPlayer-Swift */,
+				F76B6F7C238CBF0500CB3646 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		F7A6C6E820EDF7DB00C98930 /* Products */ = {
+		F76B6F7C238CBF0500CB3646 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F7A6C6E720EDF7DB00C98930 /* ZYPlayerDemo.app */,
+				F76B6F7B238CBF0500CB3646 /* ZYPlayer-Swift.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F7A6C6E920EDF7DB00C98930 /* ZYPlayerDemo */ = {
+		F76B6F7D238CBF0500CB3646 /* ZYPlayer-Swift */ = {
 			isa = PBXGroup;
 			children = (
-				F7A6C6EA20EDF7DB00C98930 /* AppDelegate.h */,
-				F7A6C6EB20EDF7DB00C98930 /* AppDelegate.m */,
-				F7A6C6ED20EDF7DB00C98930 /* ViewController.h */,
-				F7A6C6EE20EDF7DB00C98930 /* ViewController.m */,
-				F7A6C70320EE12F600C98930 /* VideoListController.h */,
-				F7A6C70420EE12F600C98930 /* VideoListController.m */,
-				F7A6C70620EE156A00C98930 /* VideoList.plist */,
-				F7A6C6F020EDF7DB00C98930 /* Main.storyboard */,
-				F7A6C6F320EDF7DC00C98930 /* Assets.xcassets */,
-				F7A6C6F520EDF7DC00C98930 /* LaunchScreen.storyboard */,
-				F7A6C6F820EDF7DC00C98930 /* Info.plist */,
-				F7A6C6F920EDF7DC00C98930 /* main.m */,
+				F76B6F7E238CBF0500CB3646 /* AppDelegate.swift */,
+				F76B6F80238CBF0500CB3646 /* ViewController.swift */,
+				F76B6F92238CC0DE00CB3646 /* VideoListController.swift */,
+				F76B6F94238CC19900CB3646 /* VideoList.plist */,
+				F76B6F82238CBF0500CB3646 /* Main.storyboard */,
+				F76B6F85238CBF0600CB3646 /* Assets.xcassets */,
+				F76B6F87238CBF0600CB3646 /* LaunchScreen.storyboard */,
+				F76B6F8A238CBF0600CB3646 /* Info.plist */,
 			);
-			path = ZYPlayerDemo;
+			path = "ZYPlayer-Swift";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F7A6C6E620EDF7DB00C98930 /* ZYPlayerDemo */ = {
+		F76B6F7A238CBF0500CB3646 /* ZYPlayer-Swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F7A6C6FD20EDF7DC00C98930 /* Build configuration list for PBXNativeTarget "ZYPlayerDemo" */;
+			buildConfigurationList = F76B6F8D238CBF0600CB3646 /* Build configuration list for PBXNativeTarget "ZYPlayer-Swift" */;
 			buildPhases = (
-				F7A6C6E320EDF7DB00C98930 /* Sources */,
-				F7A6C6E420EDF7DB00C98930 /* Frameworks */,
-				F7A6C6E520EDF7DB00C98930 /* Resources */,
+				F76B6F77238CBF0500CB3646 /* Sources */,
+				F76B6F78238CBF0500CB3646 /* Frameworks */,
+				F76B6F79238CBF0500CB3646 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ZYPlayerDemo;
-			productName = ZYPlayerDemo;
-			productReference = F7A6C6E720EDF7DB00C98930 /* ZYPlayerDemo.app */;
+			name = "ZYPlayer-Swift";
+			productName = "ZYPlayer-Swift";
+			productReference = F76B6F7B238CBF0500CB3646 /* ZYPlayer-Swift.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F7A6C6DF20EDF7DB00C98930 /* Project object */ = {
+		F76B6F73238CBF0500CB3646 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "嘴爷";
 				TargetAttributes = {
-					F7A6C6E620EDF7DB00C98930 = {
-						CreatedOnToolsVersion = 9.4.1;
+					F76B6F7A238CBF0500CB3646 = {
+						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
 			};
-			buildConfigurationList = F7A6C6E220EDF7DB00C98930 /* Build configuration list for PBXProject "ZYPlayerDemo" */;
+			buildConfigurationList = F76B6F76238CBF0500CB3646 /* Build configuration list for PBXProject "ZYPlayer-Swift" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -121,57 +113,56 @@
 				en,
 				Base,
 			);
-			mainGroup = F7A6C6DE20EDF7DB00C98930;
-			productRefGroup = F7A6C6E820EDF7DB00C98930 /* Products */;
+			mainGroup = F76B6F72238CBF0500CB3646;
+			productRefGroup = F76B6F7C238CBF0500CB3646 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F7A6C6E620EDF7DB00C98930 /* ZYPlayerDemo */,
+				F76B6F7A238CBF0500CB3646 /* ZYPlayer-Swift */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F7A6C6E520EDF7DB00C98930 /* Resources */ = {
+		F76B6F79238CBF0500CB3646 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7A6C70720EE156A00C98930 /* VideoList.plist in Resources */,
-				F7A6C6F720EDF7DC00C98930 /* LaunchScreen.storyboard in Resources */,
-				F7A6C6F420EDF7DC00C98930 /* Assets.xcassets in Resources */,
-				F7A6C6F220EDF7DB00C98930 /* Main.storyboard in Resources */,
+				F76B6F95238CC19900CB3646 /* VideoList.plist in Resources */,
+				F76B6F89238CBF0600CB3646 /* LaunchScreen.storyboard in Resources */,
+				F76B6F86238CBF0600CB3646 /* Assets.xcassets in Resources */,
+				F76B6F84238CBF0500CB3646 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F7A6C6E320EDF7DB00C98930 /* Sources */ = {
+		F76B6F77238CBF0500CB3646 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7A6C6EF20EDF7DB00C98930 /* ViewController.m in Sources */,
-				F7A6C6FA20EDF7DC00C98930 /* main.m in Sources */,
-				F7A6C6EC20EDF7DB00C98930 /* AppDelegate.m in Sources */,
-				F7A6C70520EE12F600C98930 /* VideoListController.m in Sources */,
+				F76B6F81238CBF0500CB3646 /* ViewController.swift in Sources */,
+				F76B6F93238CC0DE00CB3646 /* VideoListController.swift in Sources */,
+				F76B6F7F238CBF0500CB3646 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F7A6C6F020EDF7DB00C98930 /* Main.storyboard */ = {
+		F76B6F82238CBF0500CB3646 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F7A6C6F120EDF7DB00C98930 /* Base */,
+				F76B6F83238CBF0500CB3646 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		F7A6C6F520EDF7DC00C98930 /* LaunchScreen.storyboard */ = {
+		F76B6F87238CBF0600CB3646 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F7A6C6F620EDF7DC00C98930 /* Base */,
+				F76B6F88238CBF0600CB3646 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -179,7 +170,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		F7A6C6FB20EDF7DC00C98930 /* Debug */ = {
+		F76B6F8B238CBF0600CB3646 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -230,14 +221,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		F7A6C6FC20EDF7DC00C98930 /* Release */ = {
+		F76B6F8C238CBF0600CB3646 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -282,43 +276,46 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		F7A6C6FE20EDF7DC00C98930 /* Debug */ = {
+		F76B6F8E238CBF0600CB3646 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J2R3U3AYNF;
-				INFOPLIST_FILE = ZYPlayerDemo/Info.plist;
+				INFOPLIST_FILE = "ZYPlayer-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zuiye.cmcc.ZYPlayerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zuiye.www.ZYPlayer-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		F7A6C6FF20EDF7DC00C98930 /* Release */ = {
+		F76B6F8F238CBF0600CB3646 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J2R3U3AYNF;
-				INFOPLIST_FILE = ZYPlayerDemo/Info.plist;
+				INFOPLIST_FILE = "ZYPlayer-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zuiye.cmcc.ZYPlayerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zuiye.www.ZYPlayer-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -326,25 +323,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F7A6C6E220EDF7DB00C98930 /* Build configuration list for PBXProject "ZYPlayerDemo" */ = {
+		F76B6F76238CBF0500CB3646 /* Build configuration list for PBXProject "ZYPlayer-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F7A6C6FB20EDF7DC00C98930 /* Debug */,
-				F7A6C6FC20EDF7DC00C98930 /* Release */,
+				F76B6F8B238CBF0600CB3646 /* Debug */,
+				F76B6F8C238CBF0600CB3646 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F7A6C6FD20EDF7DC00C98930 /* Build configuration list for PBXNativeTarget "ZYPlayerDemo" */ = {
+		F76B6F8D238CBF0600CB3646 /* Build configuration list for PBXNativeTarget "ZYPlayer-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F7A6C6FE20EDF7DC00C98930 /* Debug */,
-				F7A6C6FF20EDF7DC00C98930 /* Release */,
+				F76B6F8E238CBF0600CB3646 /* Debug */,
+				F76B6F8F238CBF0600CB3646 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F7A6C6DF20EDF7DB00C98930 /* Project object */;
+	rootObject = F76B6F73238CBF0500CB3646 /* Project object */;
 }

@@ -1,9 +1,9 @@
 //
 //  ViewController.m
-//  ZYPlayerDemo
+//  ZYPlayer-OC
 //
-//  Created by 嘴爷 on 2018/7/5.
-//  Copyright © 2018年 嘴爷. All rights reserved.
+//  Created by 嘴爷 on 2019/11/26.
+//  Copyright © 2019 嘴爷. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -52,7 +52,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSURL* fileUrl = [NSURL URLWithString:@"https://v11-tt.ixigua.com/97a79c007fbf2eff57de2ea5ea504fef/5bbc75d9/video/m/2203fb2f57729814ecabc2385759838e888115c69870000007ab7e0e120/"];
+    NSURL* fileUrl = [NSURL URLWithString:@"http://txmov2.a.yximgs.com/bs2/newWatermark/MTE3NjcxNzQ4MTg_zh_3.mp4"];
     self.playerItem = [AVPlayerItem playerItemWithURL:fileUrl];
     self.player = [AVPlayer playerWithPlayerItem:self.playerItem];
     
@@ -60,7 +60,8 @@
     self.playerLayer = [AVPlayerLayer playerLayerWithPlayer:self.player];
     self.playerLayer.videoGravity = AVLayerVideoGravityResizeAspect;//填充模式
     self.playerLayer.backgroundColor = [UIColor blackColor].CGColor;
-    self.playerLayer.frame = CGRectMake(0, 0, self.view.frame.size.width, 300);//需要给一个初始值
+    CGFloat originY = [UIApplication sharedApplication].statusBarFrame.size.height;
+    self.playerLayer.frame = CGRectMake(0, originY, self.view.frame.size.width, 300);//需要给一个初始值
     [self.view.layer addSublayer:self.playerLayer ];
     //*/
     
@@ -163,7 +164,7 @@
             CGFloat duration = CMTimeGetSeconds(self.playerItem.duration);
             NSLog(@"媒体就绪，播放时长：%f", duration);
             NSLog(@"播放视图大小：%@", @(self.playerLayer.videoRect));
-//            self.playerLayer.frame = self.playerLayer.videoRect;
+            //            self.playerLayer.frame = self.playerLayer.videoRect;
             self.totalTimeLabel.text = [NSString stringWithFormat:@"%02d:%02d", (int)duration / 60, (int)duration % 60];
             
             [self mp3Info];
@@ -351,17 +352,17 @@
     [self changeVideo:info];
 }
 
- #pragma mark - Navigation
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
-     
-     if ([segue.destinationViewController isKindOfClass:[VideoListController class]]) {
-         VideoListController* vc = (VideoListController*)segue.destinationViewController;
-         vc.delegate = self;
-     }
- }
+#pragma mark - Navigation
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+    
+    if ([segue.destinationViewController isKindOfClass:[VideoListController class]]) {
+        VideoListController* vc = (VideoListController*)segue.destinationViewController;
+        vc.delegate = self;
+    }
+}
 
 
 

@@ -1,9 +1,9 @@
 //
 //  VideoListController.m
-//  ZYPlayerDemo
+//  ZYPlayer-OC
 //
-//  Created by 嘴爷 on 2018/7/5.
-//  Copyright © 2018年 嘴爷. All rights reserved.
+//  Created by 嘴爷 on 2019/11/26.
+//  Copyright © 2019 嘴爷. All rights reserved.
 //
 
 #import "VideoListController.h"
@@ -23,7 +23,7 @@
     NSString* url = [[NSBundle mainBundle] pathForResource:@"VideoList" ofType:@"plist"];
     self.dataSource = [NSArray arrayWithContentsOfFile:url];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
-
+    
     // Do any additional setup after loading the view.
 }
 
@@ -60,16 +60,20 @@
     if (self.delegate && [self.delegate respondsToSelector:@selector(videoListController:selectInfo:)]) {
         [self.delegate videoListController:self selectInfo:info];
     }
+    
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

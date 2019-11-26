@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>url</key>
+		<string>http://txmov2.a.yximgs.com/bs2/newWatermark/MTE3NjcxNzQ4MTg_zh_3.mp4</string>
+		<key>name</key>
+		<string>《胡广生》</string>
+	</dict>
+	<dict>
+		<key>url</key>
+		<string>http://muymov.a.yximgs.com/bs2/newWatermark/MTQwMjI4MjU2NDM_zh_4.mp4</string>
+		<key>name</key>
+		<string>《只是太爱你》在干吗？</string>
+	</dict>
+	<dict>
+		<key>url</key>
+		<string>https://txmov2.a.yximgs.com/bs2/newWatermark/MTQ4NDM1NTY1MTQ_zh_4.mp4</string>
+		<key>name</key>
+		<string>大海叔叔在干吗？</string>
+	</dict>
+</array>
+</plist>
