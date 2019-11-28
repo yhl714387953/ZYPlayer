@@ -91,7 +91,7 @@ class ViewController: UIViewController {
             let duration = CMTimeGetSeconds(playerItem.duration)
             let minute = Int(duration) / 60
             let second = Int(duration) % 60
-            totalTimeLabel.text = String(minute) + ":" + String(second)
+            totalTimeLabel.text =  formateNumber(number: minute) + ":" + formateNumber(number: second)
             if playerItem.asset is AVURLAsset {
                 imageView.image = getVideoPreViewAVAsset(asset: playerItem.asset as! AVURLAsset)
             }
@@ -127,7 +127,7 @@ class ViewController: UIViewController {
         
         let minute = Int(currentTime) / 60
         let second = Int(currentTime) % 60
-        currentTimeLabel.text = String(minute) + ":" + String(second)
+        currentTimeLabel.text = formateNumber(number: minute) + ":" + formateNumber(number: second)
 //            [NSString stringWithFormat:@"%02d:%02d", (int)currentTime / 60, (int)currentTime % 60];
         
         slider.value = Float(currentTime) / Float(duration)
@@ -314,7 +314,10 @@ class ViewController: UIViewController {
     
     
     
-    
+    func formateNumber(number:Int) -> String {
+        
+        return number > 10 ? String(number) : "0" + String(number)
+    }
     
     
     
